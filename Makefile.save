@@ -1,0 +1,8 @@
+hello.o: src/hello.c
+2 gcc -c -Iinc ./src/hello.c
+3
+4 main.o: src/main.c
+5 gcc -c -Iinc ./src/main.c
+6
+7 hello: main.o hello.o
+8 gcc -o hello main.o hell.o
